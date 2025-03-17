@@ -21,3 +21,21 @@
   * change styles (color,size, etc.)
   * react to user actions (like button clicks)
   */
+
+ let value;
+
+//gets the full URL of the current page
+ value = document.location.href;
+ //gets the domain name of the current page (e.g., "example.com")
+ value = document.location.hostname;
+ //gets the port number used by the current page (e.g. 443 for HTTPS)
+ value = document.location.port;
+ //gets the path of the current page after the domain
+ value = document.location.pathname;
+//gets the character encoding of the document
+ value = document.characterSet;
+//gets the title of the current document (the one seen on the browser tab)
+ value = document.title;
+ //gets the content type of the document (e.g. "text/html")
+ value = document.contentType;
+ console.log(value); //print the last assigned value to the console
