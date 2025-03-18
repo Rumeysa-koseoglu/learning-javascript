@@ -39,3 +39,33 @@
  //gets the content type of the document (e.g. "text/html")
  value = document.contentType;
  console.log(value); //print the last assigned value to the console
+ 
+//?Selectors - style features //selecting elements using different methods
+//classname, id, tag name
+
+//getElementById : captures an element by its ID
+
+const button = document.getElementById("exampleId");
+
+//logs the entire button element to the console
+console.log(button);
+
+//logs the ID of the button
+console.log(button.id);
+//another way to get the ID using getAttribute method
+console.log(button.getAttribute("id"));
+
+//logs the class name(s) of the button
+console.log(button.className);
+//another way to get the class using getAttribute method
+console.log(button.getAttribute("class"));
+
+//accessing a specific class from the class list (index 3)
+const list = button.classList[3];
+
+//looping through the class list and logging each class name
+list.forEach(function(className){
+    console.log(className);
+});
+//logs the entire class list of the button
+console.log(list)
