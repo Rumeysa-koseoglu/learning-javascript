@@ -95,3 +95,34 @@ console.log(forms[1].id); //logs the "id" attribute of the second form
 //capturing all <li> elements in the document
 const todoList = document.getElementsByTagName("li");
 console.log(todoList);//logs the collection of <li> elements
+
+
+//--querySelector - querySelectorAll 
+//*it is not a spesific selector like getElementById and getElementByClasName
+//* I can specify the attribute that I want to select, with using "#" or "."
+
+//it selects the element with id: "clear" 
+const clearButton = document.querySelector("#exp-clear-btn");
+console.log(clearButton); //logs it the console
+
+//selects element with class: "link"
+const link = document.querySelector(".link");
+console.log(link);
+
+//if you want to select all elements that have the same class you should use querySelectorAll
+const select = document.querySelectorAll(".edit-btn");
+console.log(select);
+
+//if you want to select a spesific element from the elements that have the same class, do this;
+const selector = document.querySelectorAll(".edit-btn")[2];
+//by doing this , you will select the element with the same class at the 2.nd indes (the third ".edit-btn")
+
+//*also we can loop through childs of elements with the same class
+const slct = document.querySelectorAll("li:nth-child(3)");
+//or we can use("li:first-child")/("li:last-child")
+
+//if you use odd or even you can access the element with odd or even number 
+const oddEven = document.querySelectorAll("li:nth-child(even)");//you selected the elemetns that are even numbered
+
+//*this method(way) is used to convert elements with the same class or id into an array
+//after converting to array you can loop  and perform operations on them
