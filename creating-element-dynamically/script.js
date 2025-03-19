@@ -13,7 +13,7 @@ link.className = "btn";//we add "btn" as a class name by using 'className'
 link.style.cssText = "background-color: black; margin-top: 20px; padding: 0.5em 0.5em; color: white; border-radius: 5px;"
 link.href = "http://wikipedia.com";//a href address was given 
 link.target = "_blank";//it will open in a new tab
-link.innerHTML = "Kişisel websiteme git" //we wrote text inside the button using 'innerHTML'
+link.innerHTML = "go to wikipedia" //we wrote text inside the button using 'innerHTML'
 
 container.appendChild(link); //we append this button (link) inside the container div by using 'appendChild'
 
