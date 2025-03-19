@@ -34,4 +34,15 @@ value = todo.parentElement.parentElement.parentElement;
 let ul = todo.parentElement;
 let cardBody = ul.parentElement;
 
+
+//navigating between siblings
+
+value = todo; //we have accesed a child element itself
+value = todo.nextElementSibling;//we reached the sibling element of the child element 
+value = todo.nextElementSibling.nextElementSibling;//we reached the sibling of child element's sibling
+
+//* to reach the previous sibling;
+
+value = todo.previousElementSibling; //if we add one more "previousElementSibling", we will reach the other sibling
+
 console.log(value);
