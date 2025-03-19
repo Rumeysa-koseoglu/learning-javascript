@@ -22,4 +22,16 @@ value.forEach(function (todo) {
     console.log(todo.textContent);
 })
 
+
+//accessing from children to parent
+
+value = todo; // we accessed the parent element
+value = todo.parentElement; //accessed the parent element
+value = todo.parentElement.parentElement; //the parent element of the child's (todo) parent element
+value = todo.parentElement.parentElement.parentElement;
+
+//*we can acces the parent element with this way too
+let ul = todo.parentElement;
+let cardBody = ul.parentElement;
+
 console.log(value);
