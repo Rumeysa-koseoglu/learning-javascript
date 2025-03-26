@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        .title {
+            color: rgb(166, 180, 136);
+        }
+
+        p {
+            color: rgb(97, 63, 37);
+            font-family: sans-serif;
+        }
+
+        button {
+            border: none;
+            background-color: rgb(242, 242, 116);
+            color: rgb(166, 180, 136);
+            border-radius: 5px;
+            padding: 0.5em 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="title">EVENTS</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, facilis!</p>
+        <button onclick="alert('Hello')">click me</button>
+        <!-- using onclick we get an aler message when the button is clicked-->
+
+        <!--or we can change the text of button by doing this-->
+        <button onclick="this.textContent = 'Rumi'">click me2</button>
+
+        <!--or we can also change the title -->
+        <button onclick="document.querySelector('.title').textContent='TİTLE CHANGED'">click me3</button>
+
+        <!--or we can call a method we defined in the JS page-->
+        <button onclick="changeTitle()">click me4</button>
+
+        <button class="click-me-5" onclick="changeBtnText()">click me5</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
