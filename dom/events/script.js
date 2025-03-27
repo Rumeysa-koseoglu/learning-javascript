@@ -120,3 +120,52 @@ container.addEventListener("mouseleave", mol);
 function mol() {
     p.style.color = "red";
 }
+
+
+//?Keyboard Events
+/**
+ * keypress
+ * keydown
+ * keyup
+ */
+
+
+//* keypress : it works when any key is pressed on the keyboard
+//*(only trigered on letters and numbers)
+
+document.addEventListener("keypress", kp);
+
+function kp(c) {
+    console.log(c.key); //captures which keys you press
+    // console.log(c.keyCode) / returns the ascii table equivalents of the keys (you can also use wich for the same thing)
+}
+
+
+//*keydown : the difference from "keypress" is that it is triggered by all keys on the keyboard(not only numbers and letters)
+
+
+//*keyup : it works when you lift your hand off the button (unlike others)
+
+document.addEventListener("keyup", ku);
+
+function ku(d) {
+    console.log(d.keyCode);
+}
+
+
+//example : when getting keycodes, we do this to prevent the page from refreshing when F5 is pressed
+//and to capture its keycode
+
+/*
+
+document.addEventListener("keydown", kpr);
+
+ function kpr(f) {
+     console.log(f.keyCode);
+     if (e.keyCode == 116){
+     console.log("page refresh blocked");
+ }
+     f.preventDefault();
+ }
+
+     */
