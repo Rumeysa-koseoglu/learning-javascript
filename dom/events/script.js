@@ -169,3 +169,54 @@ document.addEventListener("keydown", kpr);
  }
 
      */
+
+
+//? İnput Events
+
+/**
+ * focus
+ * blur
+ * copy
+ * paste
+ * cut
+ * select
+ */
+
+
+
+//*focus : runs when input is focused
+
+const input = document.querySelector(".input");
+
+input.addEventListener("focus", inp);
+
+function inp(g) {
+    console.log(g.type); // you can write any code you want to run when the input is focused
+}
+
+
+
+//*blur : triggered when clicking outside the input after focusing
+
+input.addEventListener("blur", inp);
+
+
+
+//*copy : it runs when we copy the text inside the input
+
+input.addEventListener("copy", inp);
+
+
+//*paste : it runs when we paste a text inside the input
+
+
+//*cut : runs when we cut the text from input
+
+
+//*select : runs when the text inside the input is selected
+
+input.addEventListener("select", log);
+
+function log() {
+    console.log(input.value); //it saves what we select from the input
+}
