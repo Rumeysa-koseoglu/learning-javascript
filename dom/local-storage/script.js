@@ -28,8 +28,8 @@ let motions = ["push up", "barfix", "burpee", "squat", "chin up"];
 
 
 //to print array values to the console individually
-let valu = JSON.parse(localStorage.getItem("motions"));
+let motionValue = JSON.parse(localStorage.getItem("motions"));
 
-valu.forEach(function(motion){
+motionValue.forEach(function(motion){
     console.log(motion)
 });
