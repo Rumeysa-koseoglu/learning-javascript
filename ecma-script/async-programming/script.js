@@ -14,7 +14,7 @@ Here are the places where js async works :
 console.log("rumeysa");
 
 setTimeout(() => {
-    console.log("it ran after 1000 ms") 
+    console.log("it ran after 1000 ms")
 }, 1000); //according to the compiler's reading order this should be written to console first but this is async and will run after 1000ms
 
 setTimeout(() => {
