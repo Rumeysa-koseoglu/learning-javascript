@@ -2,7 +2,7 @@
 
 let a;
 
-class person {
+class Person {
     /*
     1-features/properties
     2-constructive method
@@ -30,10 +30,10 @@ class person {
 
 //create object
 //*we define a variable to access the class we defined (person1)
-const person1 = new person("Rumeysa", "Koseoglu", 25, 10000);//values in this bracket will match the parameters in the constructor brackets above
+const person1 = new Person("Rumeysa", "Koseoglu", 25, 10000);//values in this bracket will match the parameters in the constructor brackets above
 
 //*we can add one or more person by using new and show them with showInfos function
-const person2 = new person("Ikranur", "Atdemir", 23, 9000);
+const person2 = new Person("Ikranur", "Atdemir", 23, 9000);
 
 //we should call the function for display infos on console
 person1.showInfos();
